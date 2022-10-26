@@ -1,0 +1,15 @@
+<script>
+  const layout = document.querySelector("nord-layout")
+  const commandMenu = document.querySelector("nord-command-menu")
+  commandMenu.commands = [
+    {
+      id: "toggle-nav",
+      title: "Toggle navigation",
+      icon: "navigation-toggle",
+      shortcut: "Alt+KeyL",
+      handler() {
+        layout.navOpen = !layout.navOpen
+      },
+    },
+  ]
+</script>
